@@ -37,7 +37,7 @@ function displayWeather(data) {
 }
 
 async function getWeather() {
-    const apiKey = 'dc795219844a04cbf1c8954e9361c686'; // Replace with your own API key
+    const apiKey = 'API key'; // Replace with your own API key
     const city = document.getElementById('city').value || 'London'; // Use 'London' for testing
 
     if (!city) {
