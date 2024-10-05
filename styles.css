@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background: linear-gradient(to bottom, #e0c3fc, #8ec5fc); /* Gradient representing the sky */
+    font-family: 'Poppins', sans-serif; /* Apply the chosen font */
+}
+
+#weather-container {
+    background-color: white; /* Background color for the weather container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 12px; /* More rounded corners for a card effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    width: 280px; /* Adjusted width for a smaller card */
+    text-align: center; /* Center text inside the container */
+}
+
+h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.8em; /* Slightly larger heading */
+    color: #6a5acd; /* Heading color */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width for the input */
+    padding: 10px; /* Padding for input */
+    margin-top: 10px; /* Space above input */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1em; /* Increase font size */
+}
+
+button {
+    padding: 10px; /* Padding for button */
+    margin-top: 10px; /* Space above button */
+    background-color: #6a5acd; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width for the button */
+    font-size: 1em; /* Increase font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #5a4db1; /* Darker shade on hover */
+}
+
+#weather-icon {
+    margin-top: 10px; /* Space above the weather icon */
+    width: 50px; /* Fixed width for the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hourly-item {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Center items vertically */
+    margin: 5px 0; /* Less margin between items */
+}
+
+.hourly-item img {
+    width: 30px; /* Smaller icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Space around the icon */
+}
+
+#hourly-forecast {
+    max-height: 150px; /* Limit the height to avoid scrolling */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+#temp-div {
+    font-size: 2em; /* Larger font size for temperature */
+    color: #6a5acd; /* Color for temperature */
+    margin-top: 10px; /* Space above temperature */
+}
+
+#weather-info p {
+    font-size: 1em; /* Size for weather description */
+    margin: 5px 0; /* Margin for weather description */
+    color: #333; /* Darker color for better contrast */
+}
